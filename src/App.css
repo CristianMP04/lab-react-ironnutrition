@@ -4,6 +4,13 @@
   flex-wrap: wrap;
 }
 
+.AppDos {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +35,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.search {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @keyframes App-logo-spin {
