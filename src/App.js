@@ -2,18 +2,13 @@ import './App.css';
 import foods from './foods.json';
 // import { Card, Row, Col, Divider, Input, Button } from 'antd';
 import {useState} from "react";
+import FoodBox from './components/FoodBox';
 
 function App() {
-  const [comidas, setComidas] = useState(foods)
+  let [comidas, setComidas] = useState(foods)
   return <div className="App">
       {comidas.map((comida) => {
-          return (
-            
-            <div>
-                <p> {comida.name} </p>
-                <img src={comida.image} width={150} />
-            </div>
-          );
+          return <FoodBox name = {comida.name} calories  = {comida.calories} image = {comida.image} servings = {comida.servings} />
         })
       }
   </div>;
