@@ -21,7 +21,7 @@ function App() {
        </div>
   
   {comidas.filter((val)=>{
-    if(setsearchTerm == ""){
+    if(setsearchTerm === ""){
       return val
     }else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
       return val
